@@ -1,0 +1,49 @@
+.category-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px 10vw;
+    width:100vw;
+}
+.category-sec{
+    width:19.7%;
+    overflow: hidden;
+}
+
+.category-heading{
+    width:100%;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 2rem;
+    font-family: 'Abril Fatface', cursive;
+}
+.category-heading h2{
+    position: relative;
+}
+.category-heading h2::before,.category-heading h2::after{
+    content: "";
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    position: absolute;
+    width: 360px;
+    height: 30px;
+}
+
+.category-heading h2::before{
+    left: 0;
+    background: linear-gradient(to left, yellow,pink,transparent);
+}
+.category-heading h2::after{
+    right:0;
+    background: linear-gradient(to right, yellow,pink,transparent);
+
+}
+
+.category-sec img{
+    width:100%;
+    transition: 0.3s;
+}
+.category-sec img:hover{
+    transform: scale(1.02);
+}

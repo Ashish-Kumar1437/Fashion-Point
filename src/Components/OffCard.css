@@ -1,0 +1,87 @@
+.off-card-container{
+    position:fixed;
+    right:0;
+    bottom:180px;
+    z-index: 6;
+    display: flex;
+    transform: translateX(400px);
+    transition: 0.5s all;
+}
+
+.off-card-handle{
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 3px;
+    width:45px;
+    height:280px;
+    background-color: black;
+    color: white;
+}
+
+.off-card-handle >.arrow{
+    padding-bottom: 10px;
+}
+.off-card-handle >p{
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+}
+
+.off-card-content{
+    width: 400px;
+    background: linear-gradient(to left,#f4e8ba,#e9a7cf);
+}
+
+.off-card-content .row-1{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+}
+
+.off-card-content .row-1 .r1-c2 img{
+   width:130px;
+}
+
+.r1-c1 .pre-heading{
+    font-size: 1rem;
+}
+.r1-c1 .heading-primary{
+    font-size: 2rem;
+    font-weight: 900;
+}
+.r1-c1 .heading-secondary{
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+.off-card-content .row-2{
+    padding: 10px 0px 10px 25px;
+    border-bottom: 2px solid rgba(78, 78, 78, 0.877);
+    margin-bottom: 10px;
+}
+
+.row-2 .coupon{
+    font-size: 1.5rem;
+}
+.coupon .text-coupon{
+    padding-right: 5px;
+}
+.off-card-content .row-3{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    font-size: 0.9rem;
+}
+.r3-c1,.r3-c2{
+width: 160px;
+}
+.r3-c3{
+    width:200px;
+}
+.text-r3{
+    vertical-align: super;
+}
+.icon-r3{
+    transform: rotate(90deg);
+}
+

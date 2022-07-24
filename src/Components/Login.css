@@ -1,0 +1,188 @@
+.sign-in-up-container{
+    position: absolute;
+    top:0;
+    z-index: 99;
+    min-width: 100vw;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.397);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-container{
+    display: flex;
+    
+  }
+  .form-box{
+    background-color: white;
+    padding: 30px;
+    min-width:25vw;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+    z-index: 20;
+  }
+  .form-box h2{
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-bottom: 20px;
+  }
+  .field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid grey;
+    font-size: 2rem;
+    margin:20px 0px;
+  }
+  .field input{
+    border:none;
+    outline: none;
+    padding-left:10px;
+    width: 100%;
+    height: 35px;
+    font-size: 1rem;
+  }
+  .field input::placeholder{
+    font-size: 0.8rem;
+    padding-bottom: 2px;
+  }
+  .field ion-icon{
+     font-size: 1.5rem;
+     color:rgb(64, 61, 61)
+  }
+  .forgot-link{
+    text-align: right;
+    font-size: 0.75rem;
+  }
+  .forgot-link a{
+    text-decoration: none;
+    color: rgb(0, 135, 253);
+  }
+  .eye-btn{
+    height:30px;
+    cursor: pointer;
+  }
+  .eye-btn ion-icon{
+     vertical-align: text-top;
+     color:rgb(64, 61, 61);
+  }
+  
+  .eye-btn ion-icon:hover{
+   cursor: pointer;
+   color:rgb(0, 89, 255);
+   transition: 0.3s;
+  }
+  .submit-btn{
+    margin: 10px 0px;
+    padding: 5px 30px;
+    background-color: rgb(0, 135, 253);
+    border:none;
+    font-size: 1.1rem;
+    border-radius: 5px;
+    color: white;
+  }
+  .login-option{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  .login-option p{
+    font-size: 0.8em;
+    padding: 10px ;
+  }
+  .login-btn{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .login-btn a{
+    display: block;
+    padding: 5px 25px;
+    border-radius: 10px;
+    border: 2px solid rgb(83, 83, 83);
+    margin: 2px 5px;
+  }
+  .login-btn a img{
+    width: 30px;
+    height:30px;
+  }
+  .field.active{
+    border-bottom:2px solid rgb(0, 89, 255) ;
+    transition: 0.5s;
+  }
+  .field.active  ion-icon{
+    color: rgb(0, 89, 255);
+  }
+  
+  .sign-in-imgbox,.sign-up-imgbox{
+    align-self: center;
+    padding: 20px 10px;
+    background-color: white;
+    box-shadow: 0 0 10px black;
+    border-radius: 5px;
+  }
+  .sliding-link{
+    font-size: 0.7rem;
+    display: flex;
+    justify-content: center;
+    gap:5px;
+    padding-bottom: 20px;
+  }
+  .sign-up-btn,.sign-in-btn{
+    color:rgb(0, 89, 255);
+    font-weight: 700;
+    font-size: 0.75rem;
+    cursor: pointer;
+  }
+  .sign-in-imgbox img,.sign-up-imgbox img{
+     width:250px;
+  }
+  .sign-in-form{
+       position:absolute;
+      }
+  /* .sign-up-form{
+    display: none;
+  } */
+  .sign-in-form.hide .sign-in-box{
+    transform: translateX(100%);
+    visibility: hidden;
+  }
+  .sign-in-form.hide .sign-in-imgbox{
+    transform: translateX(-100%);
+    visibility: hidden;
+  }
+  .sign-up-form .sign-up-imgbox{
+    transform: translateX(100%);
+    visibility: hidden;
+  }
+  .sign-up-form .sign-up-box{
+    transform: translateX(-100%);
+    visibility: hidden;
+  }
+  
+  .sign-up-form.show .sign-up-imgbox,.sign-up-form.show .sign-up-box{
+    transform: translateX(0);
+    visibility: visible;
+    transition: 0.5s ease;
+  }
+  .sign-in-form.show .sign-in-imgbox,.sign-in-form.show .sign-in-box{
+    transform: translateX(0);
+    visibility: visible;
+    transition: 0.5s ease;
+  }
+  .close-btn{
+    font-size: 2rem;
+      color: pink;
+      text-align: end;
+      margin-top: -20px;
+      margin-right: -15px;
+  }
+  .close-btn ion-icon{
+    cursor: pointer;
+  }
+  .close-btn ion-icon:hover{
+    color:red;
+    transition: 0.3s linear;
+  }

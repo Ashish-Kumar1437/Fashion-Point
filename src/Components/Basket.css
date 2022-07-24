@@ -1,0 +1,51 @@
+.basket{
+    /* background-color: #02d5ff; */
+    position: relative;
+    width: 50vw;
+    padding: 30px 20px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+    margin-left: 10vw;
+}
+.basket-card{
+    display: flex;
+    font-family: Arima;
+}
+.basket-card >img {
+    width:130px;
+    padding-right: 30px;
+}
+.basket-card >hr {
+     align-self: center;
+     border-color: blanchedalmond;
+     height: 90px;
+}
+.product-detail{
+    display: flex;
+    margin-right: auto;
+    flex-direction: column;
+    padding-left: 20px;
+    width: 18vw;
+}
+.qty {
+    margin-right: auto;
+}
+.product-prize > span:nth-child(1){
+    text-decoration: line-through 1px;
+}
+.product-prize > span:nth-child(2){
+    font-weight: 900;
+}
+.product-prize > span:nth-child(3){
+    color: red;
+}
+.basket >button{
+    position: absolute;
+    right: 50px;
+    bottom: 30px;
+    padding: 6px 25px;
+    background: lightyellow;
+    border: 2px solid;
+    border-radius: 3px;
+    cursor: pointer;
+}

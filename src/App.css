@@ -1,0 +1,13 @@
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root{
+  --col1:#EBD9DB;
+  --col2:#C89093; 
+  --font-style1: 'Arima', cursive;
+}
+body{
+  overflow-x: hidden;
+}

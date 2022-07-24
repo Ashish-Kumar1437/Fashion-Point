@@ -1,0 +1,316 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --col1:#EBD9DB;
+    --col2:#C89093; 
+    --font-style1: 'Arima', cursive;
+}
+body{
+    overflow-x: hidden;
+}
+.nav-container{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 15rem;
+}
+.top-nav{
+    width:100vw;
+    background-color: rgba(128, 128, 128, 0.356);
+    padding:0 10vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.top-nav-left,.top-nav-right{
+    display: flex;
+    justify-content: space-between;
+}
+
+.top-nav-left a,.top-nav-right a{
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    font-size: 1rem;;
+    width:7vw;
+    text-decoration: none;
+}
+.top-nav-left a ion-icon,.top-nav-right a ion-icon{
+    color:rgb(231, 11, 84);
+    margin-top: -3px;
+}
+.top-nav-left a span,.top-nav-right a span{
+    color:black;
+    font-family: var(--font-style1);
+}
+#locate-store{
+    width:9vw;
+    padding-right:5px;
+}
+#get-app{
+    padding-left:10px;
+}
+.top-nav-middle{
+      width:40vw;
+      height:100%;
+      display: flex;
+      align-items: center;
+}
+.top-nav-middle a{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-decoration: none;
+}
+.top-nav-middle a ion-icon{
+    padding:0px 2px;
+    vertical-align: middle;
+    height:50px;
+}
+.top-nav-middle a ion-icon:nth-child(1){
+    color: purple;
+    transform: rotate(45deg);
+}
+.top-nav-middle a ion-icon:nth-child(2){
+    color: yellow;
+    transform: rotate(45deg);
+}
+.top-nav-middle a ion-icon:nth-child(3){
+    color: rgb(225, 31, 111);
+    transform: rotate(45deg);
+}
+.top-nav-middle a ion-icon:nth-child(5){
+    color: rgb(225, 31, 111);
+    transform: rotate(-45deg);
+}
+.top-nav-middle a ion-icon:nth-child(6){
+    color: yellow;
+    transform: rotate(-45deg);
+}
+.top-nav-middle a ion-icon:nth-child(7){
+    color: purple;
+    transform: rotate(-45deg);
+}
+.top-nav-middle a div{
+    margin:0 15px;
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: black;
+    text-align: center;
+}
+#order{
+    width:8rem;
+}
+#instagram{
+    width:7rem;
+    padding-left: 10px;
+}
+.mid-nav{
+    display: flex;
+    padding: 0px 10vw;
+    height:100px;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right,white,pink,var(--col1),pink,white);
+}
+.mid-nav-left form{
+    position:relative;
+}
+.mid-nav-left form label ion-icon{
+  color:rgb(228, 74, 99);
+  position:absolute;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+.mid-nav-left form input{
+    border:none;
+    outline: none;
+    width: 12vw;
+ border-bottom:2px solid rgb(164, 164, 164);
+ padding:5px;
+ padding-left: 25px;
+ background: transparent;
+ font-size: 0.75rem;
+}
+.mid-nav-left form input::placeholder{
+    font-size: 1rem;
+    font-family: var(--font-style1);
+    text-align: center;
+}
+.mid-nav-mid img{
+    max-width:20rem;
+    max-height:100px;
+}
+
+.mid-nav-right{
+    display: flex;
+    width:12rem;
+    justify-content: space-evenly;
+}
+.mid-nav-right a ion-icon{
+    color:rgb(247, 52, 85);
+    width:1.5rem;
+    font-size: 1.2rem;
+}
+.login-id{
+    width:5vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    text-decoration: none;
+}
+#user-name,#login{
+    color:black;
+}
+.bag{
+    position: relative;
+}
+#basket{
+    position: absolute;
+    top: -6px;
+    right: -3px;
+    color: black;
+    background: orange;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 0.7rem;
+}
+.bottom-nav{
+    display: flex;
+    padding: 20px 10vw;
+    position: relative;
+}
+.bottom-nav.fix-nav{
+    /* display: flex; */
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    padding: 0px 10vw;
+    top:0;
+    background-color: white;
+    width:100%;
+    box-shadow: 1px 2px 5px black;
+    z-index: 99;
+    transform: translateY(-56px);
+}
+.bottom-nav.fix-nav.slide{
+    transform: translateY(0);
+    transition: transform 0.5s;
+    padding-top: 5px;
+}
+
+.bottom-nav.fix-nav .menu-container{top:55px}
+
+.bottom-nav.fix-nav .logo img{
+    display: block;
+    width:160px;
+    height:-webkit-fill-available;
+}
+.fix-nav-hide{
+    display: none;
+}
+
+.bottom-nav > ul{
+    display: flex ;
+    border-bottom: 2px solid rgba(230, 228, 228, 0.505);
+    list-style: none;
+    justify-content: space-evenly;
+    width: -webkit-fill-available;
+}
+.bottom-nav > ul  > li > a{
+    padding:10px 20px;
+    margin:-1px;
+    font-family: 'Oswald', sans-serif;
+    display: block;
+text-decoration: none;
+color: black;
+letter-spacing: 1.5px;
+font-size:1.25rem;
+border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.bottom-nav > ul > li:hover > a{
+    background-color:white;
+    color:#f6049d;
+    box-shadow: -5px -2px 5px gray, 
+        -2px -2px 5px gray, 5px -2px 5px gray;
+    z-index:1 ; 
+}
+.bottom-nav > ul > li:hover >.menu-container{
+    display: block;
+}
+.menu-container{
+    width:100vw;
+    padding: 0px 10vw;
+    z-index: 2;
+    position: absolute;
+    background-color: white;
+    left:0;
+    top:70px;
+    display: none;
+}
+.menu-content{
+    display: flex;
+}
+.menu-content > ul{
+    list-style: none;
+    display: flex;
+    width:1220px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 30px 10px 15px;
+    /* border-top:2px solid rgba(70, 69, 69, 0.2); */
+
+}
+.menu-content> ul > li >a{
+    display: block;
+    width:175px;
+    font-size:1rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    color:black;
+    padding-bottom: 5px;
+}
+
+.menu-content> ul > li{
+    margin-bottom: 20px;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    width:180px;
+    height:max-content;
+    margin-right:20px;
+}
+.content li > a{
+    font-weight: 100;
+    text-decoration: none;
+    text-transform: capitalize;
+    color:black;
+    font-family: 'Dosis', sans-serif;
+    font-size:0.8rem;
+    margin-bottom: 5px;
+    display: block;
+}
+.menu-content img{
+  width:200px;
+  height:300px;
+  align-self: center;
+  justify-self: flex-start;
+}
+.menu-container li:hover > a{
+    color:#f6049d;
+}
+.content-mid{
+    justify-content: center;
+}
