@@ -1,5 +1,5 @@
 .sign-in-up-container{
-    position: absolute;
+    position: fixed;
     top:0;
     z-index: 99;
     min-width: 100vw;

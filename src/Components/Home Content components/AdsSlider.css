@@ -44,13 +44,14 @@ cursor: pointer;
 }
 .circle{
     transition: 1s;
+    display: inline-block;
     width:20px;
     height:20px;
     border-radius: 50%;
     background-color: rgba(128, 128, 128, 0.425);
     cursor: pointer;
 }
-.circle:first-child{
+.circle.selected{
     background-color: rgba(128, 128, 128, 1);
 }
 .circle:not(:last-child){

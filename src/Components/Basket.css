@@ -1,4 +1,4 @@
-.basket{
+.basket {
     /* background-color: #02d5ff; */
     position: relative;
     width: 50vw;
@@ -7,39 +7,47 @@
     border-bottom: 2px solid black;
     margin-left: 10vw;
 }
-.basket-card{
+
+.basket-card {
     display: flex;
     font-family: Arima;
 }
-.basket-card >img {
-    width:130px;
+
+.basket-card>img {
+    width: 130px;
     padding-right: 30px;
 }
-.basket-card >hr {
-     align-self: center;
-     border-color: blanchedalmond;
-     height: 90px;
+
+.basket-card>hr {
+    align-self: center;
+    border-color: blanchedalmond;
+    height: 90px;
 }
-.product-detail{
+
+.product-detail {
     display: flex;
     margin-right: auto;
     flex-direction: column;
     padding-left: 20px;
     width: 18vw;
 }
+
 .qty {
     margin-right: auto;
 }
-.product-prize > span:nth-child(1){
+
+/* .product-prize > span:nth-child(1){
     text-decoration: line-through 1px;
-}
-.product-prize > span:nth-child(2){
+} */
+.product-prize>span:nth-child(1) {
     font-weight: 900;
 }
-.product-prize > span:nth-child(3){
+
+.product-prize>span:nth-child(3) {
     color: red;
 }
-.basket >button{
+
+.basket>button {
     position: absolute;
     right: 50px;
     bottom: 30px;
@@ -48,4 +56,72 @@
     border: 2px solid;
     border-radius: 3px;
     cursor: pointer;
+}
+
+/* ---------------- Total Container ---------------------- */
+
+.bill {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 20px
+}
+
+.overview {
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    background-color: rgb(212, 212, 212);
+    height: max-content;
+    padding: 25px;
+}
+
+.billrow {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.billrow>h3 {
+    font-weight: 300;
+}
+
+.discount {
+    color: rgb(217, 90, 132);
+}
+
+.total {
+    padding-top: 5px;
+    border-top: 2px solid black;
+    font-weight: 800;
+}
+
+.total>h3 {
+    font-weight: 800;
+}
+
+.btnc {
+    background-color: rgb(220, 50, 107);
+    width: 70%;
+    font-size: 2rem;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.btnc>a {
+    text-decoration: none;
+    color: white;
+}
+
+.shop>a {
+    text-decoration: none;
+    color: black;
+}
+
+.shop {
+    background-color: white;
+    border: 2px solid black;
 }

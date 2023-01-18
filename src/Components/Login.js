@@ -44,6 +44,14 @@ export default function Login(props) {
             setlogin({signIn:"hide",signUp:"show"})
         }
     }
+
+    const loginFun = (e)=>{
+        e.preventDefault();
+        fetch("https://fakestoreapi.com/products/category/men's clothing")
+            .then(res=>res.json())
+            .then(json=>console.table(json))
+        alert("login");
+    }
  
     
 
@@ -72,7 +80,7 @@ export default function Login(props) {
                     <div className="forgot-link">
                         <Link to="/">Forget Password?</Link>
                     </div>
-                    <input className="submit-btn" type="submit" value="Login"/>
+                    <input className="submit-btn" type="submit" onClick={loginFun} value="Login"/>
                 </form>
                 <div className="login-option">
                     <p className="text">Or, Login with...</p>
